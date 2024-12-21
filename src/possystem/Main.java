@@ -57,8 +57,10 @@ public class Main {
         paymentLabel.setBounds(10, 80, 100, 25);
         panel.add(paymentLabel);
 
-        // كومبو بوكس لاختيار طريقة الدفع
-        JComboBox<String> paymentCombo = new JComboBox<>(new String[]{"CreditCard", "Cash", "Mobile"});
+        // كومبو بوكس لاختيار طريقة الدفع (إضافة Bank Transfer كخيار جديد)
+        JComboBox<String> paymentCombo = new JComboBox<>(new String[]{
+            "CreditCard", "Cash", "Mobile", "Bank Transfer"
+        });
         paymentCombo.setBounds(150, 80, 165, 25);
         panel.add(paymentCombo);
 
